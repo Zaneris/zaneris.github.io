@@ -23,7 +23,29 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="decode.min.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>
+    Blazor.start({
+        loadBootResource: function (type, name, defaultUri, integrity) {
+        if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
+            return (async function () {
+            const response = await fetch(defaultUri + '.br', { cache: 'no-cache' });
+            if (!response.ok) {
+                throw new Error(response.statusText);
+            }
+            const originalResponseBuffer = await response.arrayBuffer();
+            const originalResponseArray = new Int8Array(originalResponseBuffer);
+            const decompressedResponseArray = BrotliDecode(originalResponseArray);
+            const contentType = type === 
+                'dotnetwasm' ? 'application/wasm' : 'application/octet-stream';
+            return new Response(decompressedResponseArray, 
+                { headers: { 'content-type': contentType } });
+            })();
+        }
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="/js/site.js"></script>
 </body>
