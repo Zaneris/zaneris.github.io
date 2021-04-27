@@ -1,0 +1,20 @@
+﻿[
+  {
+    "name":"Zohra Sheikh",
+    "position":"Founder, CEO",
+    "about":"Zohra Sheikh was the Chief Technology Officer and Senior Lead Solutions Architect at eTRANSERVICES, working alongside CEO,Chris Beckford. She was responsible for the overseeing the engineering plans, service delivery, implementation and growth and training strategies for a low code platform used internationally. She worked on UDPaas since its inception, earning a FedRAMP security certification and Dept. of Defence Cloud Computing Security at Impact Level 2 for use by the United States (U.S) military customers. She has been actively contributing to development projects since 2008, at various software publishing companies throughout her career, such as the Toronto based company, SmartSimple Software and Kivuto Solutions, located in Ottawa. She has served as a solutions architect advisor for several U.S government agencies and holds an educational background in Computer Science, attending both Athabasca University and University of Toronto. Her impact has helped global industries foster growing financial responsibility, led by reduced spending on process tools and outdated protocols, shifting the investments off of expensive resources and into enterprise-wide technical training and workplace reskilling.",
+    "image":"headshot.jpg"
+  },
+  {
+    "name":"Ted Lapkin",
+    "position":"Co-Founder, Chief Technology Officer",
+    "about":"Ted Lapkin is a software developer, aircraft mechanic, and retired veteran of the Royal Canadian Air Force. He wrote his first computer program at the age of 14, and spent the next decade improving his skills. In 2006 he joined the military and developed leadership skills along with a true understanding of responsibility. He concurrently then studied Computer Engineering at Seneca College, and Computer Science at York University. In 2012 he started his career with the RCAF, working on the CC130J Hercules, deploying to Mali, Senegal, Iraq, and the Caribbean. He subsequently retired and refocused his efforts on his true passion, the world of technology.",
+    "image":"Ted_Headshot.jpg"
+  },
+  {
+    "name":"Badzu",
+    "position":"Chief Morale Officer",
+    "about":"Leading the charge, tip of the spear, edge of the knife. Our fearless leader keeps everyone's spirit high, spreading cheer to all.",
+    "image":"CMO.jpg"
+  }
+]
